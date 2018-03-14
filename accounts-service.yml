@@ -1,0 +1,19 @@
+# Discovery Server Access
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+  instance:
+    leaseRenewalIntervalInSeconds: 5
+
+# HTTP Server
+server:
+  port: 2222   # HTTP (Tomcat) port
+
+management:
+  security:
+    enabled: false
+
+security:
+  basic:
+    enabled: false
